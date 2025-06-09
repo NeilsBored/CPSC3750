@@ -1,0 +1,144 @@
+/*
+  File: index.html
+  Author: Your Name
+  Date: 2025-06-03
+  Course: CPSC 3750 – Web Application Development
+  Purpose: Home page for Project 2 showcasing responsive design and API integration.
+  Notes: Uses Bootstrap 5 and fetches data from the OpenWeather API.
+*/
+
+body{
+  background-image: url("screen.jpg");
+  /*https://srv449-files.hstgr.io/a15ee9b640f904fd/files/public_html/assets/images_critic/screen.jpg*/
+  background-size: cover;
+  background-position: center;
+  margin:100px;
+	padding:0;
+	font-family: Sans-Serif;
+  border: 2px solid #000000;
+  border-radius: 20px;
+}
+
+ body main { 
+  background-color: #ffffff;
+  padding: 9px;
+}
+
+ header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #000000;
+  text-align: center;
+  border: 2px solid #000000;
+  border-top-left-radius: 20px;
+  border-top-right-radius:20px;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+  margin-left: 30px;
+}
+
+ header h1 {
+  display: inline-block;
+  padding-left: 30px;
+  vertical-align: top;
+  margin-top: 40px;
+  font-family: Avenir light, sans-serif;;
+  color: #ffffff;
+}
+
+ nav {
+  background-color: #2d2754;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  font-family: avenir, sans-serif;;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#my_favorites {
+  background-color: #ffffff;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-family: Avenir, sans-serif;;
+}
+
+#my_favorites h2 {
+  color: #1d126e;
+  font-family: Avenir, sans-serif;;
+}
+
+marquee img {
+  width: 230px;
+  height: 320px;
+  margin-left: 10px;
+}
+
+#introduction {
+  background-color: #ffffff;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-family: Avenir light, sans-serif;;
+  border: none;
+}
+
+#lists {
+  background-color: #ffffff;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-family: Avenir light, sans-serif;;
+  border: none;
+}
+
+#review {
+  display: flex;
+  align-items: flex-start; 
+  background-color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Avenir, sans-serif;;
+  border: none;
+}
+#review header {
+  text-align: left;
+  background-color: #ffffffa8;
+  padding: 20px;
+  font-family: Avenir, sans-serif;;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+#review footer {
+  text-align: left;
+  background-color: #2d2754dd;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: Avenir, sans-serif;;
+  border: none;
+  font-size: 10px;
+  padding: 20px;
+}
+
+#review img {
+  width: 350px;
+  height: 500px;
+  margin-left: 10px;
+  padding: 10px;
+}
+footer {
+  background-color: #000000;
+  border: 2px solid #000000;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius:20px;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
