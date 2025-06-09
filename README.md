@@ -10,7 +10,7 @@
 
   HTML for page structure
 
-  CSS3for styling and responsive layouts
+  CSS for styling and responsive layouts
 
 <b>License</b>
 
