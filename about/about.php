@@ -1,3 +1,12 @@
+<!--
+  File: about.php
+  Author: Shane John
+  Date: 2025-05-08
+  Course: CPSC 3750 – Web Application Development
+  Purpose: Introduction page for my personal information and interests.
+  Notes: This page was previously included as the home page of the website.
+-->
+
 <!DOCTYPE html>
 
 <style>

@@ -1,3 +1,12 @@
+<!--
+  File: layout.php
+  Author: Shane John
+  Date: 2025-05-10
+  Course: CPSC 3750 – Web Application Development
+  Purpose: A sample hybrid layout from SAMs book
+  Notes: See the book for more details on how this layout works.
+-->
+
 <!DOCTYPE html>
 
 <html lang="en">

@@ -1,3 +1,12 @@
+/*
+  File: main_style.css
+  Author: Shane John
+  Date: 2025-05-10
+  Course: CPSC 3750 – Web Application Development
+  Purpose: Stylesheet for a foundational base across the website
+  Notes: This is supposed to be general across the site, but still needs work on separation of concerns
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
    * {
     margin: 0;

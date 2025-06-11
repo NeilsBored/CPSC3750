@@ -1,3 +1,12 @@
+<!--
+  File: page2.php
+  Author: Shane John
+  Date: 2025-05-08
+  Course: CPSC 3750 – Web Application Development
+  Purpose: Showcases my personal favorite movies/shows
+  Notes: Includes a list of my all-time favorites and most rewatchable films.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -13,11 +22,10 @@
 		<header>
 			<img src="images_critic/Image.png" alt="Colorful camera icon"><h1>Shane's Critic Corner</h1>
 		</header>
-
 		<nav> <a href="page1.php">Welcome</a>
-		| <a href="page2.php">My Personal Favorites</a> 
-		| <a href="page3.php">A Movie Review</a> 
-		| <a href="mailto:shanej@clemson.edu">Send me an email</a>
+			| <a href="page2.php">My Personal Favorites</a> 
+			| <a href="page3.php">A Movie Review</a> 
+			| <a href="mailto:shanej@clemson.edu">Send me an email</a>
 		</nav>
 		<main>
 			<section id="my_favorites">

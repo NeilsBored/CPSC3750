@@ -1,3 +1,12 @@
+<!--
+  File: index.php
+  Author: Shane John
+  Date: 2025-05-10
+  Course: CPSC 3750 – Web Application Development
+  Purpose: A home page for CPSC-3750 Summer 2025
+  Notes: Looking for ideas on what else to add to this page.
+-->
+
 <!DOCTYPE html>
 
 <html lang="en">

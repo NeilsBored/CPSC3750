@@ -1,3 +1,12 @@
+/*
+  File: layout.css
+  Author: Shane John
+  Date: 2025-05-10
+  Course: CPSC 3750 – Web Application Development
+  Purpose: Stylesheet for Fixed Fluid Layout Assignment
+  Notes: Features adjustments laid out in the assignment instructions
+*/
+
 body {
   margin:0;
   padding:0;

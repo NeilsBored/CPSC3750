@@ -1,3 +1,12 @@
+<!--
+  File: page3.php
+  Author: Shane John
+  Date: 2025-05-10
+  Course: CPSC 3750 – Web Application Development
+  Purpose: A quick review of a movie I like a lot
+  Notes: The movie is "The Hitchhiker's Guide to the Galaxy" and if you like the movie, the books are even better!
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>

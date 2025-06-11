@@ -1,3 +1,12 @@
+<!--
+  File: GroupCSS1.php
+  Author: Shane John
+  Date: 2025-05-10
+  Course: CPSC 3750 – Web Application Development
+  Purpose: Demo of Various Beginner CSS Properties
+  Notes: covers videos the first 12 items on the w3schools CSS tutorial (Home - Height/Width).
+-->
+
 <!DOCTYPE html>
 <html>
 <head>

@@ -1,4 +1,12 @@
-<!-- navbar.php -->
+<!--
+  File: navbar.php
+  Author: Shane John
+  Date: 2025-05-10
+  Course: CPSC 3750 – Web Application Development
+  Purpose: Common Navigation Bar 
+  Notes: Meant to be be portable to every page in the site.
+-->
+
 <?php $BASE_PATH = '/'; ?>
   
 <nav style="top:0px; width:100%;">

@@ -1,8 +1,17 @@
+<!--
+  File: page1.php
+  Author: Shane John
+  Date: 2025-05-08
+  Course: CPSC 3750 – Web Application Development
+  Purpose: Welcome page for Critic Corner
+  Notes: Includes a brief introduction to my love for movies and what makes a good movie to me.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
 	<head>
-    	<title>Cirtic Corner</title>
+    	<title>Critic Corner</title>
     	<link rel="stylesheet" type="text/css" href="styles.css">
       <link rel="stylesheet" href="/main_style.css">
 	</head>
