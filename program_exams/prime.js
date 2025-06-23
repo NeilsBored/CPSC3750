@@ -74,7 +74,7 @@ setInterval(() =>
 function listTotal(type)
 {
     //Setup list set
-    const listId = type === 'primes' ? 'primesList' : 'notPrimesList';
+    const listId = type === 'prime' ? 'primesList' : 'notPrimesList';
     const numbers = document.getElementById(listId).getElementsByTagName('li');
     
     //Loop and add

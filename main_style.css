@@ -139,7 +139,11 @@ nav .content .links
 }
 /* Week 4 */
 #show-week4 ~ ul{
-  right: calc(-100% - 100px);
+  right: calc(-100% - 0px);
+}
+/* Week 5 */
+#show-week5 ~ ul{
+  right: calc(-100% - 42px);
 }
 
 
@@ -171,7 +175,7 @@ nav .content .links
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1000px){
   .wrapper .menu-icon{
     display: block;
   }

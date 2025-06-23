@@ -40,9 +40,27 @@
                                 <li><a href="#">Common NavBar</a></li>
                             </ul>                
                         </li>
-                        <li><a href="#">Week 4</a></li>
+                        <li><a href="#" class="desktop-link">Week 4</a>
+                            <input type="checkbox" id="show-week4">
+                            <label for="show-week4">Week 4</label>
+                            <ul>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                            </ul>                
+                        </li>
+                        <li><a href="#" class="desktop-link">Week 5</a>
+                            <input type="checkbox" id="show-week5">
+                            <label for="show-week5">Week 5</label>
+                            <ul>
+                                <li><a href="<?= $BASE_PATH ?>assignments/week5/card_object/cards.php">Card Object</a></li>
+                                <li><a href="#">2</a></li>
+                            </ul>                
+                        </li>
                     </ul>
             </li>
+            <li><a href="<?= $BASE_PATH ?>program_exams/prime.html">Program Exams</a></li>
             <li><a href="https://github.com/NeilsBored/CPSC3750">Github Link</a></li>
             <li><a href="mailto:shanej@clemson.edu">Send Feedback</a></li>
         </ul>

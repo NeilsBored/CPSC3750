@@ -38,7 +38,7 @@
   </div>
  
   <div class="hero-section" style="height: 100vh;" >
-      <img src="home_assets/images/background.png" alt="Background Image" style="height: 70%">
+      <img src="background_home.png" alt="Background Image" style="height: 70%">
       <div class="content" style="height:30%; top: 43%;">
         <div class="text">
           <div class="header-section">
