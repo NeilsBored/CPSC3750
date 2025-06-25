@@ -1,5 +1,5 @@
 /*
-  File: cards.css
+  File: cards.js
   Author: Shane John
   Date: 2025-06-19
   Course: CPSC 3750 – Web Application Development

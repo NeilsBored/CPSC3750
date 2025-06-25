@@ -143,7 +143,11 @@ nav .content .links
 }
 /* Week 5 */
 #show-week5 ~ ul{
-  right: calc(-100% - 42px);
+  right: calc(-100% - 57px);
+}
+/* Week 6 */
+#show-week6 ~ ul{
+  right: calc(-100% - 0px);
 }
 
 
@@ -227,8 +231,10 @@ nav .content .links
   }
   .content .links #show-assignments:checked ~ ul,
   .content .links #show-week2:checked ~ ul,
-  .content .links #show-week3:checked ~ ul
-  .content .links #show-week4:checked ~ ul{
+  .content .links #show-week3:checked ~ ul,
+  .content .links #show-week4:checked ~ ul,
+  .content .links #show-week5:checked ~ ul,
+  .content .links #show-week7:checked ~ ul{
     max-height: 100vh;
   }
   .content .links ul li{

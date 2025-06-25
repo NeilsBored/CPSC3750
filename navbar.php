@@ -55,7 +55,7 @@
                             <label for="show-week5">Week 5</label>
                             <ul>
                                 <li><a href="<?= $BASE_PATH ?>assignments/week5/card_object/cards.php">Card Object</a></li>
-                                <li><a href="#">2</a></li>
+                                <li><a href="<?= $BASE_PATH ?>assignments/week5/group_events/events.php">Group: Events</a></li>
                             </ul>                
                         </li>
                     </ul>

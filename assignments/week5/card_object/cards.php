@@ -75,7 +75,7 @@
 
   <!-- Script Files -->
   <script src="cards.js"></script>
-  <script src="newloops.js"></script>
+  <script src="newLoops.js"></script>
   <script>
     cardApp();
   </script>

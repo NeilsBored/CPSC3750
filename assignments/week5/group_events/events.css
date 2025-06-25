@@ -1,0 +1,115 @@
+/*
+  File: events.css
+  Author: Shane John
+  Date: 2025-06-24
+  Course: CPSC 3750 – Web Application Development
+  Purpose: Stylesheet for Group: Events Assignment
+  Notes: Provides CSS style settings for Cards.php Elements
+*/
+
+/* Default Container */
+.eventContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  width: 60%;
+  background-color: #abb0b459;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #8eb9f85f;
+  border-radius: 20px;
+}
+
+/* Animation Demo */
+#box {
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #f75c35, #c60a0a);
+  animation: moveAndFade 3s 5;
+}
+@keyframes moveAndFade {
+  0%   { transform: translateX(0); opacity: 0.80; }
+  20%  { transform: translateX(300px); opacity: 1; }
+  30%  { transform: translateX(0); opacity: 0.75; border-top-left-radius: 30%; border-bottom-left-radius: 30%;}
+  35%  { transform: translateX(100px); opacity: 1; border-top-left-radius: 45%; border-bottom-left-radius: 45%;}
+  45%  { transform: translateX(200px); opacity: 1;border-top-left-radius: 50%; border-bottom-left-radius: 50%;}
+  55%  { transform: translateX(0); opacity: 0.75; border-top-left-radius: 35%; border-bottom-left-radius: 35%;}
+  60%  { transform: translateX(50px); opacity: 1; border-top-left-radius: 45%; border-bottom-left-radius: 45%;}
+  70%  { transform: translateX(100px); opacity: 1; border-top-left-radius: 50%; border-bottom-left-radius: 50%;}
+  80%  { transform: translateX(0); opacity: 0.75; border-top-left-radius: 45%; border-bottom-left-radius: 45%;}
+  90%  { transform: translateX(25px); opacity: 0.90; border-top-left-radius: 50%; border-bottom-left-radius: 50%;}
+  100% { transform: translateX(0); opacity: 1;}
+}
+
+/* Drag Demo */
+#dragMe {
+  width: 110px;
+  height: 110px;
+  background: linear-gradient( #6EE7B7 0%, #3B82F6 100%);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  user-select: none;
+  cursor: grab;
+  transition: transform 0.5s ease, box-shadow 0.2s ease;
+}
+#dragMe:active {
+  cursor: grabbing;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.20);
+}
+#dropZone {
+  width: 120px;
+  height: 120px;
+  background: #F3F4F6;
+  border: 3px dashed #4b89e5c4;
+  border-radius: 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  color: #6B7280;
+  transition: background 0.5s ease, border-color 0.5s ease;
+}
+#dropZone.over {
+  background: #E0F2FE;
+  border-color: #00eeff;
+  color: #1E40AF;
+}
+
+/* Mouse Demo */
+#mouseArea {
+  width: 300px; height: 80px;
+  font-family: sans-serif;
+  background: rgb(0, 0, 0);
+  line-height: 75px;
+  text-align: center;
+  color: #f4f6f7;
+  border-radius: 20px;
+}
+
+/* Input & Focus Demos */
+input, textarea {
+  display: block;
+  padding: 5px;
+  width: 400px;
+  border-radius: 10px;
+}
+#area::placeholder {
+  color: rgb(168, 167, 167);
+  opacity: 0.75;
+}
+#area:focus::placeholder {
+  color: white;
+  opacity: 1;
+}
