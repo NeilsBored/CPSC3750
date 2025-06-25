@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>GroupEvents.html</title>
+  <title>Group: Events</title>
   <link rel="stylesheet" href="events.css">
   <link rel="stylesheet" href="../../../main_style.css">
 </head>

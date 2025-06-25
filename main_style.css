@@ -145,8 +145,8 @@ nav .content .links
 #show-week5 ~ ul{
   right: calc(-100% - 57px);
 }
-/* Week 6 */
-#show-week6 ~ ul{
+/* Week 7 */
+#show-week7 ~ ul{
   right: calc(-100% - 0px);
 }
 
