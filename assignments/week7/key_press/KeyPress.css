@@ -1,0 +1,32 @@
+/*
+  File: cards.css
+  Author: Shane John
+  Date: 2025-06-27
+  Course: CPSC 3750 – Web Application Development
+  Purpose: Small Styling for KeyPress Assignment
+  Notes: Minimal to save time.
+*/
+
+/*Body*/
+body 
+{
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 2%;
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s, color 0.5s;
+}
+/*Header*/
+h1 
+{ 
+  margin-top: 2%;
+}
+/*Pressed key display*/
+#output 
+{
+  margin-top: 2%;
+  margin-bottom: 1%;
+  font-size: 17px;
+}

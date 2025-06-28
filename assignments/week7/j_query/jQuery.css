@@ -1,0 +1,33 @@
+
+div.content {
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#progressbar {
+  width: 300px;
+  margin-top: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+#accordion { 
+    max-width: 600px; 
+    margin-bottom: 20px; 
+}
+
+
+#datepicker {
+  padding: 5px;
+  font-size: 15px;
+  width: 5.5%;
+}
+
+#progress-container {
+  margin-top: 20px;
+  max-width: 600px;
+}

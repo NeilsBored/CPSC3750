@@ -48,7 +48,7 @@ nav .content .links
 .content .links li
   {
     list-style: none;
-    line-height: 70px;
+    line-height: 69px;
   }
 .content .links li a,
 .content .links li label
@@ -147,7 +147,7 @@ nav .content .links
 }
 /* Week 7 */
 #show-week7 ~ ul{
-  right: calc(-100% - 0px);
+  right: calc(-100% - 19px);
 }
 
 

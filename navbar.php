@@ -58,6 +58,14 @@
                                 <li><a href="<?= $BASE_PATH ?>assignments/week5/group_events/events.php">Group: Events</a></li>
                             </ul>                
                         </li>
+                        <li><a href="#" class="desktop-link">Week 7</a>
+                            <input type="checkbox" id="show-week7">
+                            <label for="show-week7">Week 7</label>
+                            <ul>
+                                <li><a href="<?= $BASE_PATH ?>assignments/week7/key_press/KeyPress.php">Key Press</a></li>
+                                <li><a href="#">jQuery</a></li>
+                            </ul>                
+                        </li>
                     </ul>
             </li>
             <li><a href="<?= $BASE_PATH ?>program_exams/prime.html">Program Exams</a></li>
