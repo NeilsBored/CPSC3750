@@ -1,3 +1,12 @@
+/*
+  File: jQuery.html
+  Author: Shane John
+  Date: 2025-06-27
+  Course: CPSC 3750 – Web Application Development
+  Purpose: Frontend fluff to implement the backend mess 
+  Notes: The border radius change on the navbar is intentional, I wanted to showcase the back ground change a little more.
+*/
+
 $(document).ready(function(){
   
   $("div.content").hover(
