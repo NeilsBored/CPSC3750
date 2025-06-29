@@ -9,14 +9,14 @@
 
 $(document).ready(function(){
   // Mouseover
-  $("div.content").hover(
+  $("#jquery div.content").hover(
     function(){ $(this).css("background-color", "yellow"); },
     function(){ $(this).css("background-color", "white"); }
   );
   // Fading Effects
-  $("#fade1").click(function(){ $("div.content").eq(0).fadeOut(); });
-  $("#fade2").click(function(){ $("div.content").eq(1).fadeOut(); });
-  $("#fade3").click(function(){ $("div.content").eq(2).fadeOut(); });
+  $("#fade1").click(function(){ $("div.content").eq(1).fadeOut(); });
+  $("#fade2").click(function(){ $("div.content").eq(2).fadeOut(); });
+  $("#fade3").click(function(){ $("div.content").eq(3).fadeOut(); });
 
   // Accordion Animations
   $('#accordion').accordion({ heightStyle: 'content'});
@@ -47,7 +47,13 @@ $(document).ready(function(){
   {
     // 5% per second (20 seconds total)
       val += 5; 
+      if (val >= 100) 
+      {
+        clearInterval(timer);
+        var widget = $("#progressbar").progressbar("widget");
+        widget.find(".ui-progressbar-value").css("background-color", "red");
+      }
       $("#progressbar").progressbar("value", val);
-    if(val >= 100) clearInterval(timer);
+
   }, 1000);
 });

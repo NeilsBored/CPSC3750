@@ -16,7 +16,6 @@
   <script src="../jquery-3.7.1.min.js"></script>
   <script src="KeyPress.js"></script>
 </head>
-<body>
   <div class="wrapper" style="border-radius: 20px;">
         <?php include '../../../navbar.php'; ?>
   </div>

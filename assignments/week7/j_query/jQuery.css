@@ -1,48 +1,54 @@
 /*
-  File: jQuery.html
+  File: jQuery.css
   Author: Shane John
   Date: 2025-06-27
   Course: CPSC 3750 – Web Application Development
-  Purpose: Frontend fluff to implement the backend mess 
+  Purpose: Styling for jQuery assignment
   Notes: The border radius change on the navbar is intentional, I wanted to showcase the back ground change a little more.
 */
-
-div.content {
-  border: 1px solid black;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-section {
-  border-radius: 10px;
-  background-color: #000000;
-  border: 1px solid black;
-  padding: 10px;
-  margin-bottom: 50px;
-}
-#progressbar {
-  width: 300px;
-  margin-top: 20px;
-}
-
-body {
+ 
+#jquery
+{
   font-family: Arial, sans-serif;
   margin: 20px;
 }
 
-#accordion { 
+#jquery div.content
+{
+  padding: 20px;
+  margin-bottom: 10px;
+}
+#fade1, #fade2, #fade3 
+{
+  padding: 5px;
+}
+#jquery section
+{
+  background-color: #000000;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 50px;
+  width: 78%;
+}
+
+#datepicker 
+{
+  padding: 5px;
+  font-size: 15px;
+  width: 7%;
+}
+#accordion 
+{ 
     max-width: 600px; 
     margin-bottom: 20px; 
 }
-
-
-#datepicker {
-  padding: 5px;
-  font-size: 15px;
-  width: 5.5%;
-}
-
-#progress-container {
+#progressbar 
+{
+  width: 300px;
   margin-top: 20px;
-  max-width: 600px;
+}
+#progressbar .ui-progressbar-value 
+{
+  background: rgb(58, 193, 0);
 }
