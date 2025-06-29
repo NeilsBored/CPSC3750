@@ -1,38 +1,33 @@
 <!--
-  File: .html
+  File: jQuery.html
   Author: Shane John
   Date: 2025-06-27
   Course: CPSC 3750 – Web Application Development
-  Purpose: Frontend fluff to implement the backend mess 
-  Notes: The border radius change on the navbar is intentional, I wanted to showcase the back ground change a little more.
+  Purpose: A showcase for the jQuery widgets and effects
+  Notes: Mostly the same as the provided example, but I tried to add my own spin in some parts.
 -->
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-
+  <!-- jQuery and jQuery UI Calls-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link   rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-
-
+  <!-- Assignment CSS and JS -->
   <link rel="stylesheet" href="jQuery.css">
-
-  
   <script src="jQuery.js" defer></script>
 </head>
 <body>
-    <h1>Welcome to My Homepage</h1>
+    <h1>Welcome to The jQuery Homepage</h1>
     <p>This is a paragraph.</p>
-
-    <div style="margin-bottom:10px;">
+    <section>    
+      <div style="margin-bottom:10px;">
         <button id="fade1">Fade div 1</button>
         <button id="fade2">Fade div 2</button>
         <button id="fade3">Fade div 3</button>
-    </div>
-    
-  
+      </div>
+      
   <div class="content">
     <p>A paragraph in a div.</p>
     <p>“A common mistake that people make when trying to design something 
@@ -40,7 +35,6 @@
         <b>Douglas Adams</b>
     </p>
   </div>
-
   <div class="content">
     <p>A paragraph in another div.</p>
     <p>“Everyone should be able to do one card trick, tell two jokes, and recite three poems, 
@@ -48,13 +42,15 @@
         <b>Lemony Snicket</b>
     </p>
   </div>
-
   <div class="content">
     <p>A paragraph in another div.</p>
     <p>“We have so much time and so little to do. Strike that, reverse it.” <br>
         <b>Roald Dahl</b>
-</p>
+    </p>
   </div>
+
+</section>
+
 
   
 
