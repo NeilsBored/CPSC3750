@@ -17,7 +17,7 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <!-- Assignment CSS and JS -->
     <link rel="stylesheet" href="jQuery.css">
-    <script src="jQuery.js" defer></script>
+    <script src="jQuery.js"></script>
 </head>
 <body>
   <div class="wrapper">

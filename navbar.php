@@ -64,6 +64,7 @@
                             <ul>
                                 <li><a href="<?= $BASE_PATH ?>assignments/week7/key_press/KeyPress.php">Key Press</a></li>
                                 <li><a href="<?= $BASE_PATH ?>assignments/week7/j_query/jQuery.php">jQuery</a></li>
+                                <li><a href="<?= $BASE_PATH ?>assignments/week7/group_audio/GroupAudio.html">jQuery</a></li>
                             </ul>                
                         </li>
                     </ul>

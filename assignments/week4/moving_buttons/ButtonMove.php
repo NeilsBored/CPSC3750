@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+ 
   <title>Button Move Demo</title>
   <link rel="stylesheet" href="ButtonMove.css">
 </head>
