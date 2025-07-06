@@ -64,12 +64,13 @@
                             <ul>
                                 <li><a href="<?= $BASE_PATH ?>assignments/week7/key_press/KeyPress.php">Key Press</a></li>
                                 <li><a href="<?= $BASE_PATH ?>assignments/week7/j_query/jQuery.php">jQuery</a></li>
-                                <li><a href="<?= $BASE_PATH ?>assignments/week7/group_audio/GroupAudio.html">jQuery</a></li>
+                                <li><a href="<?= $BASE_PATH ?>assignments/week7/group_audio/GroupAudio.php">Group: Audio</a></li>
                             </ul>                
                         </li>
                     </ul>
             </li>
             <li><a href="<?= $BASE_PATH ?>program_exams/prime.html">Program Exams</a></li>
+            <li><a href="<?= $BASE_PATH ?>audio_demo/AudioDemo.php">Audio Demo</a></li>
             <li><a href="https://github.com/NeilsBored/CPSC3750">Github Link</a></li>
             <li><a href="mailto:shanej@clemson.edu">Send Feedback</a></li>
         </ul>

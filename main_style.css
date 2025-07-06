@@ -148,10 +148,8 @@ nav .content .links
 }
 /* Week 7 */
 #show-week7 ~ ul{
-  right: calc(-100% - 19px);
+  right: calc(-100% - 51px);
 }
-
-
 
 .content .links ul li
   {
@@ -319,4 +317,5 @@ nav .content .links
       position: relative;
       top: 3px;
       left: 15%;
+      
   }

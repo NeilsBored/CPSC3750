@@ -1,0 +1,129 @@
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+h2, h3, h4 {
+    background-color: black;
+    color: white;
+    padding: 3px;
+    
+}
+h2 {
+   margin-left: 45px;
+   margin-top: 20px;  
+   display:inline-block;
+}
+h3 {
+    margin-left: 45px; 
+    margin-bottom: 10px;
+    display:inline-block;
+}
+h4 {
+    text-align: center;
+}
+
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+#rewindButton, #fastForwardButton {
+    display: inline-block;
+    margin: 5px;
+    margin-left: 23px;
+}
+#rewindButton:hover, #fastForwardButton:hover {
+    background-color: rgb(150, 119, 96);
+}
+
+#addTitle {
+    background-color: green;
+}
+#removeTitle {
+    background-color: red;
+}
+#playPauseButton:hover, #addTitle:hover, #removeTitle:hover {
+    background-color: #555;
+}
+
+#volumeRange {
+    width: 75%;
+}
+
+
+#playlist {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+
+#playlist li {
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 5px 0;
+    background-color: #222;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#playlist li:hover {
+    background-color: #444;
+}
+
+
+
+.chevron {
+    text-align: center;
+    margin: 10px 0;
+}
+.chevron-line {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(315deg);
+}
+
+  /* Main div */
+    /* Control Element */
+    .control 
+    {
+      margin-bottom: 15px; 
+      margin-left: 30px;
+    }
+    /* Element Labels */ 
+    label 
+    { 
+      display: block; 
+      font-weight: bold; 
+      padding-bottom: 5px;
+    }
+    /* Time Slider */
+    #timeRange 
+    {
+      width: 275px;
+    }
+    /* Playback Information */
+    .playback
+    {
+      margin-bottom: 15px;
+      text-align: center;
+    }
