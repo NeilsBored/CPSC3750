@@ -11,7 +11,7 @@
 
 <style>
     .about{
-        background-color: #1b2332;
+        background-color:rgb(0, 0, 0);
     }
 </style>
 

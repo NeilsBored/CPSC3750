@@ -1,7 +1,16 @@
+ /*
+  File: GroupAudio.js
+  Author: Shane John
+  Date: 2025-07-06
+  Course: CPSC 3750 – Web Application Development
+  Purpose: Supports the main AudioDemo application by providing audio playback controls, volume management, and time tracking capabilities.
+  Notes: Orginally featured in GroupAudio Assignment, but used here to save time on the non-required features of the page.
+*/
+
  $(document).ready(function()
       {
         // Element Variables
-        var $audio = $('#myAudio'),
+        var $audio = $('#theAudio'),
             audio = $audio[0],
             $volumeRange = $('#volumeRange'),
             $volume = $('#volumeValue'),
@@ -28,23 +37,6 @@
           $timeRange.val(audio.currentTime);
         });
         $timeRange.on('input', function() {audio.currentTime = this.value;});
-      
-        // Progress Bar Animation
-  $("#progressbar").progressbar({ value: 0 });
-  let val = 0;
-  const timer = setInterval(function()
-  {
-    // 5% per second (20 seconds total)
-      val += 5; 
-      if (val >= 100) 
-      {
-        clearInterval(timer);
-        var widget = $("#progressbar").progressbar("widget");
-        widget.find(".ui-progressbar-value").css("background-color", "red");
-      }
-      $("#progressbar").progressbar("value", val);
-
-  }, 1000);
 });
     
     
