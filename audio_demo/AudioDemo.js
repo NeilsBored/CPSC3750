@@ -121,7 +121,7 @@ addTitleButton.onclick = () =>
     let newTitle = prompt('Enter A Title For Your Segment:')
         if(!newTitle) return;
     // Capture segment start time
-    let t = audio.currentTime;
+    let t = Number(audio.currentTime.toFixed(0));
     let duration = parseFloat(prompt('How long in seconds is your segment?'));
         if (!duration) return;
     // Cut segment end to audio duration
