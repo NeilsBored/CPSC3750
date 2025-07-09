@@ -67,6 +67,14 @@
                                 <li><a href="<?= $BASE_PATH ?>assignments/week7/group_audio/GroupAudio.php">Group: Audio</a></li>
                             </ul>                
                         </li>
+                        <li><a href="#" class="desktop-link">Week 8</a>
+                            <input type="checkbox" id="show-week8">
+                            <label for="show-week8">Week 8</label>
+                            <ul>
+                                <li><a href="<?= $BASE_PATH ?>assignments/week8/ajax_php/livesearch.php">Ajax PHP</a></li>
+                                <li><a href="<?= $BASE_PATH ?>assignments/week8/group_hangman/hangman.html">Group: Hangman</a></li>
+                            </ul>                
+                        </li>
                     </ul>
             </li>
             <li><a href="<?= $BASE_PATH ?>program_exams/prime.html">Program Exams</a></li>

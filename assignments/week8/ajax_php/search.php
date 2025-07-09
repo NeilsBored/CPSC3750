@@ -1,0 +1,87 @@
+<!--
+  File: search.php
+  Author: Shane John
+  Date: 2025-07-08
+  Course: CPSC 3750 – Web Application Development
+  Purpose: PHP data handling "mostly" from chap 11 source code
+  Notes: Today I learned the capitol of Montana.
+-->
+
+<?php
+header("Content-Type: text/xml; charset=UTF-8");
+$states = [
+  "Alabama"=>"Montgomery",
+  "Alaska"=>"Juneau",
+  "Arizona"=>"Phoenix",
+  "Arkansas"=>"Little Rock",
+  "California"=>"Sacramento",
+  "Colorado"=>"Denver",
+  "Connecticut"=>"Hartford",
+  "Delaware"=>"Dover",
+  "Florida"=>"Tallahassee",
+  "Georgia"=>"Atlanta",
+  "Hawaii"=>"Honolulu",
+  "Idaho"=>"Boise",
+  "Illinois"=>"Springfield",
+  "Indiana"=>"Indianapolis",
+  "Iowa"=>"Des Moines",
+  "Kansas"=>"Topeka",
+  "Kentucky"=>"Frankfort",
+  "Louisiana"=>"Baton Rouge",
+  "Maine"=>"Augusta",
+  "Maryland"=>"Annapolis",
+  "Massachusetts"=>"Boston",
+  "Michigan"=>"Lansing",
+  "Minnesota"=>"Saint Paul",
+  "Mississippi"=>"Jackson",
+  "Missouri"=>"Jefferson City",
+  "Montana"=>"Helena",
+  "Nebraska"=>"Lincoln",
+  "Nevada"=>"Carson City",
+  "New Hampshire"=>"Concord",
+  "New Jersey"=>"Trenton",
+  "New Mexico"=>"Santa Fe",
+  "New York"=>"Albany",
+  "North Carolina"=>"Raleigh",
+  "North Dakota"=>"Bismarck",
+  "Ohio"=>"Columbus",
+  "Oklahoma"=>"Oklahoma City",
+  "Oregon"=>"Salem",
+  "Pennsylvania"=>"Harrisburg",
+  "Rhode Island"=>"Providence",
+  "South Carolina"=>"Columbia",
+  "South Dakota"=>"Pierre",
+  "Tennessee"=>"Nashville",
+  "Texas"=>"Austin",
+  "Utah"=>"Salt Lake City",
+  "Vermont"=>"Montpelier",
+  "Virginia"=>"Richmond",
+  "Washington"=>"Olympia",
+  "West Virginia"=>"Charleston",
+  "Wisconsin"=>"Madison",
+  "Wyoming"=>"Cheyenne"
+];
+
+//Query Setup
+$q = isset($_GET['query']) ? trim($_GET['query']) : '';
+$q = strtoupper($q);
+
+echo "<?xml version=\"1.0\" ?>\n";
+echo "<results>\n";
+
+//Blank Query Check
+if ($q !== '') 
+{
+   //Add Results
+  foreach ($states as $state=>$capitol) 
+  {
+    if (strtoupper(substr($state,0,strlen($q))) === $q) 
+    {
+      echo "  <capitol>$capitol</capitol>\n";
+    }
+  }
+}
+
+echo "</results>";
+?>
+

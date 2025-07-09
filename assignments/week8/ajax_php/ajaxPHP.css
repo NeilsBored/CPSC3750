@@ -1,0 +1,49 @@
+/*
+  File: ajaxPHP.css
+  Author: Shane John
+  Date: 2025-07-08
+  Course: CPSC 3750 – Web Application Development
+  Purpose: General Stylings
+  Note: The bulletins on the original page looked bad, so I changed a few of element style.
+*/
+
+/* Defaults */
+.search 
+{
+  font-size: 12pt;
+  font-family: Helvetica;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Search field */
+input 
+{
+  font-size: 11pt;
+  padding: 6px;
+  margin-top:10px;
+  width: 250px;
+  border: 2px solid #66666674;
+}
+
+/* Results */
+#results 
+{
+  width: fit-content;
+  min-width: 250px;
+  padding: 0;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* Result listings */
+ul#list 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul#list li 
+{
+  padding: 5px;
+}
