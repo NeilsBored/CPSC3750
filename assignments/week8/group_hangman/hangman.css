@@ -1,3 +1,11 @@
+/*
+  File: hangman.css
+  Author: Shane John
+  Date: 2025-07-10
+  Course: CPSC 3750 – Web Application Development
+  Purpose: General Stylings
+  Note: Figureing out text-shadow with the background information was my favorite of design this!
+*/ 
 body 
 {
     background-color: #ffb974;
@@ -13,15 +21,15 @@ footer
     background-size: cover;
     background-repeat: repeat-x;
     background-position: center;
-    margin-left: -0.55%;
+    margin-left: -3%;
     position: fixed;
-    bottom: -120px;
-    width: 100%;
-    height: 40em;
+    bottom: -250px;
+    width: 2000px;
+    height: 50em;
     z-index: 1000;
 }
 
-
+/* All Page Elements*/
 #game-container 
 {
     font-family: Arial;
@@ -31,7 +39,7 @@ footer
     position: relative;
     z-index: 2000;
 }
-
+/* All Game Elements*/
 #game-container section 
 {
     color: #522D80;
@@ -40,6 +48,8 @@ footer
     border: 5px solid #f28f44c9;
     border-radius: 20px;
 }
+
+/* Game Intro Information */
 #background
 {
     color: #ffb974;
@@ -54,18 +64,20 @@ footer
     font-size: 18pt;
 }
 
-
+/* In-Game Word Display */
 #wordToGuess 
 {
     font-size: 24px;
     letter-spacing: 2px;
     white-space: pre;
 }
-
+/* Cheater Check Box */
 #cheatMode
 {
     margin-top: 10%;
 }
+
+/* Letter Grid and All Buttons */
 #letters input 
 {
     display: none;

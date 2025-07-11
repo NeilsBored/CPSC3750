@@ -1,20 +1,25 @@
 <?php
-// 1) Build a filesystem path to words.txt, one directory above this script
-$wordFile = __DIR__ . '/../../../../words.txt';
+/*
+  File: getWord.php
+  Author: Shane John
+  Date: 2025-07-10
+  Course: CPSC 3750 – Web Application Development
+  Purpose: Handles locating and getting a random word from the list for each game.
+  Notes: A little different, but the logic is still close to the original. 
+*/
 
-// 2) Read all non-blank lines into array
-$words = file(
-  $wordFile,
-  FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES
-);
-
-// 3) Pick at random, trim it, lowercase it, and output it
-if ($words) {
-  $random = $words[array_rand($words)];
-  echo strtolower(trim($random));
-} else {
-  // if the file cant be read
-  http_response_code(500);
-  echo 'Error loading word list.';
+// Get the word list 
+$wordFile = __DIR__.'/../../../../words.txt';  
+if (!file_exists($wordFile)) {          
+    http_response_code(500);
+    exit('Error loading word list-1');
 }
+// Get a random word
+$words = file($wordFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+if (!$words) {                            
+    http_response_code(500);
+    exit('Error loading word list-2');
+}
+// Share that word
+echo strtolower(trim($words[array_rand($words)]));
 ?>

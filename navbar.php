@@ -72,7 +72,7 @@
                             <label for="show-week8">Week 8</label>
                             <ul>
                                 <li><a href="<?= $BASE_PATH ?>assignments/week8/ajax_php/livesearch.php">Ajax PHP</a></li>
-                                <li><a href="<?= $BASE_PATH ?>assignments/week8/group_hangman/hangman.html">Group: Hangman</a></li>
+                                <li><a href="<?= $BASE_PATH ?>assignments/week8/group_hangman/hangman.php">Group: Hangman</a></li>
                             </ul>                
                         </li>
                     </ul>

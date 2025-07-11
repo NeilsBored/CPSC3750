@@ -21,14 +21,14 @@
     position: relative;
     background: #1b2332;
     width: 100%;  
-    z-index: 2;
+    z-index: 3000;
+   
     
   }
 
 .wrapper nav
   {
     background: #1b2332;
-    display: flex;
     max-width: calc(100% - 100px);
     margin: 0 auto;
     height: 70px;

@@ -1,12 +1,3 @@
-<!--
-  File: search.php
-  Author: Shane John
-  Date: 2025-07-08
-  Course: CPSC 3750 – Web Application Development
-  Purpose: PHP data handling "mostly" from chap 11 source code
-  Notes: Today I learned the capitol of Montana.
--->
-
 <?php
 header("Content-Type: text/xml; charset=UTF-8");
 $states = [
