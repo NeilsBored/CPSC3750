@@ -17,13 +17,12 @@
   }
 .wrapper
   {
-     top: 0;
+    top: 0;
     position: relative;
     background: #1b2332;
     width: 100%;  
     z-index: 3000;
-   
-    
+  
   }
 
 .wrapper nav
@@ -31,7 +30,7 @@
     background: #1b2332;
     max-width: calc(100% - 100px);
     margin: 0 auto;
-    height: 70px;
+    max-height: 70px;
     align-items: center;
     justify-content: space-between;
   }
@@ -40,10 +39,11 @@ nav .content
     background: #1b2332;
     display: flex;
     align-items: center;
+    text-size-adjust: auto;;
   }
 nav .content .links
   {
-    margin-left: 80px;
+    margin-left: 40px;
     display: flex;
   }
 .content .links li
@@ -55,7 +55,7 @@ nav .content .links
 .content .links li label
   {
     color: #fff;
-    font-size: 18px;
+    font-size: 0.80rem;
     font-weight: 500;
     padding: 9px 17px;
     border-radius: 5px;
@@ -132,27 +132,31 @@ nav .content .links
 
 /* Week 2 */
 #show-week2 ~ ul{
-  right: calc(-100% - 97px);
+  right: calc(-100% - 69px);
 }
 /* Week 3 */
 #show-week3 ~ ul{
-  right: calc(-100% - 93px);
+  right: calc(-100% - 66px);
 }
 /* Week 4 */
 #show-week4 ~ ul{
-  right: calc(-100% - 0px);
+  right: calc(-100% - 52px);
 }
 /* Week 5 */
 #show-week5 ~ ul{
-  right: calc(-100% - 57px);
+  right: calc(-100% - 40px);
 }
 /* Week 7 */
 #show-week7 ~ ul{
-  right: calc(-100% - 51px);
+  right: calc(-100% - 36px);
 }
 /* Week 8 */
 #show-week8 ~ ul{
-  right: calc(-100% - 90px);
+  right: calc(-100% - 64px);
+}
+/* Week 9 */
+#show-week9 ~ ul{
+  right: calc(-100% - 55px);
 }
 
 

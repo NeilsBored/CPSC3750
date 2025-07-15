@@ -1,0 +1,68 @@
+/*
+  File: forms.css
+  Author: Shane John
+  Date: 2025-07-14
+  Course: CPSC 3750 – Web Application Development
+  Purpose: An attempt at the most minimal styling ever
+  Notes: I got a lot of use out of the type styling this time.
+*/
+
+/* User Form Header */
+h1
+{
+    text-align: center;
+}
+/* User Form */
+form 
+{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1% 1% 2% 6%;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    text-align: left;
+}
+/* User Form labels*/
+form label 
+{
+    margin-bottom: 5px;
+    padding: 10px 10px 0 0;
+    font-weight: bold;
+    display: inline-block;
+    text-align: right;
+}
+/* Personal Bio Textbox */
+textarea
+{
+    min-width: 400px;
+    min-height: 50px;
+}
+
+/* "Quick" Selections*/
+input[type="checkbox"] + label, 
+input[type="radio"] + label
+{
+    font-weight: normal;
+}
+/* One Line Textboxes */
+input[type="text"], 
+input[type="password"],
+input[type="url"]
+{
+    padding-left: 5px; 
+    min-width: 200px;
+}
+/* Submit Button */
+input[type="submit"]
+{
+    margin: 20px 30% 5px 30%;
+    padding: 10px;
+    color: white;
+    background-color: #1b2332;
+    font-size: 10pt;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+

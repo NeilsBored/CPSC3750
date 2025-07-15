@@ -2,8 +2,8 @@
   File: hangman.php
   Author: Shane John
   Date: 2025-07-10
-  Course: CPSC 3750 – Web Application Development
-  Purpose: Frontend page for Clemson Hangman Game
+  Course: CPSC 3750 – Web Application Development1
+  Purpose: Frontend page for Clemson Hangman Game.         
   Notes: I though game were supposed to be fun, but now all I have is a headache.
 -->
 <!DOCTYPE html>

@@ -37,17 +37,15 @@
                                 <li><a href="#">Javascript Events</a></li>
                                 <li><a href="#">PHP Helloworld</a></li>
                                 <li><a href="#">Group: More CSS</a></li>
-                                <li><a href="#">Common NavBar</a></li>
                             </ul>                
                         </li>
                         <li><a href="#" class="desktop-link">Week 4</a>
                             <input type="checkbox" id="show-week4">
                             <label for="show-week4">Week 4</label>
                             <ul>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
+                                <li><a href="#">Moving Buttons</a></li>
+                                <li><a href="#">Javascript Sort</a></li>
+                                <li><a href="<?= $BASE_PATH ?>index.php">Main Page</a></li>
                             </ul>                
                         </li>
                         <li><a href="#" class="desktop-link">Week 5</a>
@@ -73,6 +71,14 @@
                             <ul>
                                 <li><a href="<?= $BASE_PATH ?>assignments/week8/ajax_php/livesearch.php">Ajax PHP</a></li>
                                 <li><a href="<?= $BASE_PATH ?>assignments/week8/group_hangman/hangman.php">Group: Hangman</a></li>
+                            </ul>                
+                        </li>
+                        <li><a href="#" class="desktop-link">Week 9</a>
+                            <input type="checkbox" id="show-week9">
+                            <label for="show-week9">Week 9</label>
+                            <ul>
+                                <li><a href="<?= $BASE_PATH ?>assignments/week9/group_forms/forms.php">Group: Forms</a></li>
+                                <li><a href="<?= $BASE_PATH ?>assignments/week9/group_sessions/carSelection.php">Group: Sessions</a></li>
                             </ul>                
                         </li>
                     </ul>

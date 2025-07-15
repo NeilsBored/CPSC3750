@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
   <title>Button Move Demo</title>
+  <link rel="stylesheet" href="../../../main_style.css">
   <link rel="stylesheet" href="ButtonMove.css">
 </head>
 <body>
+    <!--Common NavBar-->
+  <div class="wrapper">
+    <?php include '../../../navbar.php'; ?>
+  </div>
   <nav>
-    <a href="#controls">Controls</a>
-    <a href="#displayArea">Display</a>
-    <a href="#about">About</a>
+    <a href="#controls" id="controlsLink">Controls</a>
+    <a href="#displayArea" id="displayLink">Display</a>
+    <a href="#about" id="aboutLink">About</a>
   </nav>
 
   <section id="controls">
