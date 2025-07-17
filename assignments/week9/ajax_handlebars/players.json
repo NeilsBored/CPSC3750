@@ -1,0 +1,54 @@
+{
+  "players": [
+    {
+        "name": "Bobby Hull", 
+        "position": "Left Wing", 
+        "number": 9 
+    },
+    { 
+        "name": "Wayne Gretzky", 
+        "position": "Center", 
+        "number": 99 
+    },
+    { 
+        "name": "Gordie Howe", 
+        "position": "Right Wing", 
+        "number": 9 
+    },
+    { 
+        "name": "Alexander Ovechkin", 
+        "position": "Left Wing", 
+        "number": 8 
+    },
+    { 
+        "name": "Mario Lemieux", 
+        "position": "Center", 
+        "number": 66 
+    },
+    { 
+        "name": "Nikita Kucherov", 
+        "position": "Right Wing", 
+        "number": 86 
+    },
+    { 
+        "name": "Bobby Orr", 
+        "position": "Defence", 
+        "number": 4 
+    },
+    { 
+        "name": "Nicklas Lidström",
+        "position": "Defence",
+        "number": 5  
+    },
+    { 
+        "name": "Martin Brodeur", 
+        "position": "Goaltender", 
+        "number": 30 
+    },
+    { 
+        "name": "Patrick Roy", 
+        "position": "Goaltender", 
+        "number": 33 
+    }
+  ]
+}

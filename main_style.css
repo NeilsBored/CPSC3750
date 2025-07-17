@@ -58,7 +58,7 @@ nav .content .links
     font-size: 0.80rem;
     font-weight: 500;
     padding: 9px 17px;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: all 0.3s ease;
   }
 .content .links li label
@@ -75,7 +75,7 @@ nav .content .links
 .wrapper .menu-icon
   {
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     line-height: 70px;
     width: 70px;
@@ -94,8 +94,9 @@ nav .content .links
 .content .logo a
   {
     color: #fff;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
+    display: flex;
   }
 
 
@@ -114,14 +115,17 @@ nav .content .links
     top: 70px;
     opacity: 1;
     visibility: visible;
-    transition: all 0.3s ease;
+    transition: all 0.35s ease-in;
+    border-radius: 20px;
+    background-color: rgba(54, 78, 103, 0.952);
+   
   }
 .content .links ul li a
   {
     display: block;
     width: 100%;
     line-height: 30px;
-    border-radius: 0px!important;
+    border-radius: 20px;
   }
 .content .links ul ul
   {
@@ -156,7 +160,7 @@ nav .content .links
 }
 /* Week 9 */
 #show-week9 ~ ul{
-  right: calc(-100% - 55px);
+  right: calc(-100% - 68px);
 }
 
 
@@ -184,6 +188,7 @@ nav .content .links
   .content .links li a
     {
       padding: 8px 13px;
+      border-radius: 10px;
     }
 }
 
@@ -216,10 +221,10 @@ nav .content .links
   }
   .content .links li a,
   .content .links li label{
-    line-height: 40px;
-    font-size: 20px;
+    line-height: 24px;
+    font-size: 18px;
     display: block;
-    padding: 8px 18px;
+    padding: 8px 10px;
     cursor: pointer;
   }
   .content .links li a.desktop-link{
@@ -242,7 +247,9 @@ nav .content .links
   .content .links #show-week3:checked ~ ul,
   .content .links #show-week4:checked ~ ul,
   .content .links #show-week5:checked ~ ul,
-  .content .links #show-week7:checked ~ ul{
+  .content .links #show-week7:checked ~ ul,
+  .content .links #show-week8:checked ~ ul,
+  .content .links #show-week9.content ~ ul{
     max-height: 100vh;
   }
   .content .links ul li{

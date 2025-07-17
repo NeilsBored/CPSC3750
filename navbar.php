@@ -77,6 +77,8 @@
                             <input type="checkbox" id="show-week9">
                             <label for="show-week9">Week 9</label>
                             <ul>
+                                <li><a href="<?= $BASE_PATH ?>assignments/week9/ajax_handlebars/ajaxHandlebars.php">AJAX-Handlebars</a></li>
+                                <li><a href="<?= $BASE_PATH ?>assignments/week9/php_file_app/fileApp.php">PHP File I/O App</a></li>
                                 <li><a href="<?= $BASE_PATH ?>assignments/week9/group_forms/forms.php">Group: Forms</a></li>
                                 <li><a href="<?= $BASE_PATH ?>assignments/week9/group_sessions/carSelection.php">Group: Sessions</a></li>
                             </ul>                

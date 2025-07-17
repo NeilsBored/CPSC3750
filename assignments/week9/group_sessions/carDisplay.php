@@ -27,21 +27,22 @@ session_start();
   <div class="wrapper">
     <?php include '../../../navbar.php'; ?>
   </div >
-
-  <h1>Car Display Page</h1>
-  <?php if (empty($cars)): ?>
-    <p>No Cars Currrently Selected</p>
-  <?php else: ?>
-    <ul>
-    <?php foreach ($cars as $car): ?>
-      <li><?= htmlspecialchars($car) ?></li>
-    <?php endforeach; ?>
-    </ul>
-  <?php endif; ?>
-  <p>
-    <a href="carClear.php">Clear Selections</a>
-    |
-    <a href="carSelection.php">Back to Selections Page</a>
-  </p>
+  <div style="margin-left:2%">
+    <h1>Car Display Page</h1>
+    <?php if (empty($cars)): ?>
+      <p>No Cars Currrently Selected</p>
+    <?php else: ?>
+      <ul>
+      <?php foreach ($cars as $car): ?>
+        <li><?= htmlspecialchars($car) ?></li>
+      <?php endforeach; ?>
+      </ul>
+    <?php endif; ?>
+    <p>
+      <a href="carClear.php">Clear Selections</a>
+      |
+      <a href="carSelection.php">Back to Selections Page</a>
+    </p>
+  </div>  
 </body>
 </html>
