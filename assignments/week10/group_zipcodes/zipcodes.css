@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 2em;
+}
+form {
+  margin-bottom: 1em;
+}
+input[type="text"] {
+  font-size: 1.5em;
+  width: 6em;
+  text-align: center;
+  margin: 0 .5em;
+}
+button {
+  font-size: 1em;
+  padding: .5em 1em;
+}
+.result {
+  font-size: 2em;
+  margin-top: 1em;
+  color: #2a7;
+}
+.error {
+  font-size: 1.2em;
+  color: #c33;
+}
+.debug {
+  display: block;
+  margin-top: .5em;
+  font-size: .9em;
+}
+.verify-link {
+  margin-bottom: 0.5em;
+  font-size: 0.9em;
+}
+.hidden {
+  display: none;
+}
+.debug-section {
+  border: 1px solid #ccc;
+  background: #fafafa;
+  padding: 1em;
+  margin-top: 1em;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.debug-section h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+.debug-details > div {
+  margin-bottom: 0.5em;
+}
+.debug-details pre {
+  background: #eee;
+  padding: 0.5em;
+  overflow-x: auto;
+}

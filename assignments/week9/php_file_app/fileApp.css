@@ -1,0 +1,101 @@
+/*
+  File: fileApp.css
+  Author: Shane John
+  Date: 2025-07-18
+  Course: CPSC 3750 – Web Application Development
+  Purpose: Styling for File app assignment frontend
+  Notes: Colors used to visually distinguish between number category lists.
+*/
+
+/* Main Style */
+.number-sort
+{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+/* Feedback Messages */
+.message 
+{
+  color:#494e59;
+  background-color: #c6e1fe;
+  padding: 8px;
+  border: 2px solid #7d828c;
+  border-radius:5px;
+  margin-bottom: 10px;
+}
+
+/* User Input Textbox */
+textarea 
+{
+  min-width: 400px;
+  margin-bottom: 10px;
+  margin-top:-20px;
+}
+textarea label
+{
+  margin-top: 20px;
+}
+
+/* General Button(s) Styles */
+.buttons 
+{
+  margin-top: 10px;
+}
+button 
+{
+  border: none;
+  padding: 8px 12px;
+  margin: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Button Colors */
+button[value="CHECK"] { background: #007bff; color: #fff; display: block; margin: 0 auto 10px; }
+button[value="PRIME"] { background: #28a745; color: #fff; }
+button[value="ARMSTRONG"] { background: #17a2b8; color: #fff; }
+button[value="FIBONACCI"] { background: #ffc107; color: #212529; margin-bottom: 10px; }
+button[value="NONE"] { background: #dc3545; color: #fff; }
+button[value="RESET"] { background: #6c757d; color: #fff; margin-bottom: 20px;}
+
+/* Number List Styles */
+.number-list {
+  margin-top: 10px;
+}
+.number {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 3px;
+  border-radius: 5px;
+}
+.number.prime { background: #b0eebf }
+.number.armstrong { background: #d1ecf1 }
+.number.fibonacci { background: #ffebaa }
+.number.none { background: #fba3a3 }
+
+/* Cookie Banner */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffefbd;
+  color: #856404;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.cookie-banner button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  align-items: center;
+}
+.cookie-banner button#acceptCookies { background-color: #000000; color: #ffffff; }
+.cookie-banner button#declineCookies { background-color: #ffffff; color: #000000; }
