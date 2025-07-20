@@ -6,7 +6,6 @@
   Purpose: Common Navigation Bar 
   Notes: Meant to be be portable to every page in the site.
 -->
-
 <?php $BASE_PATH = '/'; ?>
   
 <nav style="top:0px; width:100%;">
@@ -85,10 +84,11 @@
                         </li>
                     </ul>
             </li>
-            <li><a href="<?= $BASE_PATH ?>program_exams/prime.html">Program Exams</a></li>
+            <li><a href="<?= $BASE_PATH ?>program_exams/exam_one/prime.html">Exam #1</a></li>
+            <li><a href="<?= $BASE_PATH ?>program_exams/exam_two/vowels.php">Exam #2</a></li>
             <li><a href="<?= $BASE_PATH ?>audio_demo/AudioDemo.php">Audio Demo</a></li>
-            <li><a href="https://github.com/NeilsBored/CPSC3750">Github Link</a></li>
-            <li><a href="mailto:shanej@clemson.edu">Send Feedback</a></li>
+            <li><a href="https://github.com/NeilsBored/CPSC3750">Github Repo</a></li>
+            <li><a href="mailto:shanej@clemson.edu">Email Shane</a></li>
         </ul>
     </div>
     </div>
