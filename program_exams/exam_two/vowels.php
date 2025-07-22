@@ -9,7 +9,7 @@
 
 <!-- Include for Logic -->
 <?php
-    require __DIR__. '/vowelsLogic.php';
+    require __DIR__. '/../../../exam_two/vowelsLogic.php';
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +21,7 @@
 </head>
 <body>
     <!-- Common Navbar -->
-    <div class="wrapper">s
+    <div class="wrapper">
         <?php include '../../navbar.php'; ?>
     </div >
     <!-- Exam Implementation Area -->

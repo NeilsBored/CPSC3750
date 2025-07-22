@@ -1,62 +1,123 @@
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 2em;
+/* 
+  File: zipcodes.php
+  Author: Shane John
+  Date: 2025-07-19
+  Course: CPSC 3750 – Web Application Development1
+  Purpose: Frontend page for zipcode distance assignment         
+  Notes:  - Fun fact, the magority of the time spent on this assignment
+            was spent figuring out a workable way to geo-code.
+          - I used JSON data for this assignment, the instructions say to "find a free data file" 
+            without specificing a type...hope that's okay.
+*/
+
+body
+{
+    background-image: url("map.jpeg"); 
 }
-form {
-  margin-bottom: 1em;
+.zip-container
+{
+    background-color: white;
+    padding: 2%;
+    padding-top: 10px;
+    margin: 2% auto 0 auto;
+    border: 3px solid orange;
+    border-radius: 20px;
+    justify-self: center;
+    text-align: center;
+    min-width: fit-content;
 }
-input[type="text"] {
-  font-size: 1.5em;
-  width: 6em;
-  text-align: center;
-  margin: 0 .5em;
+
+.zip-container h1
+{
+    color: rgb(1, 167, 26);
 }
-button {
-  font-size: 1em;
-  padding: .5em 1em;
+
+.zip-inputs
+{
+    width: 100px;
+    font-size: 12pt;
+    color: royalblue;
+    justify-items: right;
+    margin-right: 20px;
 }
-.result {
-  font-size: 2em;
-  margin-top: 1em;
-  color: #2a7;
+.zip-inputs input
+{
+    font-size: 13pt;
+    max-width: 80px;
+    text-align: center;
+    margin-bottom: 10px;
 }
-.error {
-  font-size: 1.2em;
-  color: #c33;
+
+.actions button
+{
+    font-size: 12pt;
+    min-width: 200px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-color: orange;
+    color: white;
+    border: 0px solid;
+    border-radius:20px;
 }
-.debug {
-  display: block;
-  margin-top: .5em;
-  font-size: .9em;
+
+.row
+{
+    margin: 1% 20% 1% 20%;
+    background-color: white;
+    display: flex;
+    justify-self: center;
 }
-.verify-link {
-  margin-bottom: 0.5em;
-  font-size: 0.9em;
+.zip-inputs
+{
+    display: block;
 }
-.hidden {
-  display: none;
+
+.hidden 
+{
+    display: none;
 }
-.debug-section {
-  border: 1px solid #ccc;
-  background: #fafafa;
-  padding: 1em;
-  margin-top: 1em;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
+
+.distance-display 
+{
+    color: rgb(228, 148, 0);
+    display: flex;
+    margin-top: 1%;
+    gap: 5px;
+    justify-self: center;
 }
-.debug-section h2 {
-  margin-top: 0;
-  font-size: 1.2em;
-  color: #333;
+.distance-display .location 
+{
+    display: block;
 }
-.debug-details > div {
-  margin-bottom: 0.5em;
+.distance-display .distance-line 
+{
+    height: 10px;
+    background-color: rgb(147, 199, 242);
+    max-width: 900px;
+    min-width: 300px;
+    border-radius: 5px;
 }
-.debug-details pre {
-  background: #eee;
-  padding: 0.5em;
-  overflow-x: auto;
+
+.location
+{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    color: rgb(18, 139, 238);
+}
+.location h5
+{
+    color:rgb(1, 167, 26)
+}
+
+section
+{
+    margin: 15px;
+    padding: 5px 2% 1% 2%;;
+    justify-self: center;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
 }
