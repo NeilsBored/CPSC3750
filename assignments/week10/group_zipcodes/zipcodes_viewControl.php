@@ -1,5 +1,5 @@
 <!--
-  File: zipcodes.php
+  File: zipcodes_viewControl.php
   Author: Shane John
   Date: 2025-07-19
   Course: CPSC 3750 – Web Application Development1
@@ -26,7 +26,7 @@
     {
         die("Error: " . $readFail->getMessage());
     }
-    // 
+    //
     $zip1 = $_POST['zip1'] ?? '';
         $zipRecord1 = $zip1 ? getZipRecord($zipMap, $zip1) : null;
     $zip2 = $_POST['zip2'] ?? '';
@@ -75,10 +75,7 @@
         </div>
       </div>
     </form>
-
-    <?php if ($distance !== null): ?>
-  
-
+  <?php if ($distance !== null): ?>
     <div class="distance-display">
       <div class="location">
         <h4><?= htmlspecialchars($zipRecord1['city'] . ', ' . $zipRecord1['state']) ?></h4>
@@ -94,33 +91,31 @@
       </div>  
     </div>
   </div>
-
-      <section id="debug-section" class="debug-section<?= $debug ? '' : ' hidden' ?>">
-      <h2>Debug Information</h2>
-      <div class="debug-details">
-        <div><b>ZIPCODE 1:</b> <?= htmlspecialchars(var_export($zipRecord1, true)) ?></div>
-        <div><b>ZIPCODE 2:</b> <?= htmlspecialchars(var_export($zipRecord2, true)) ?></div>
-        <div><b>Intermediate Values:</b>
-          <pre><?php
-              $dLat = $distance[1];
-              $dLng = $distance[2];
-              $a = $distance[3];
-              $c = $distance[4];
-              echo "  Δlatitude = {$dLat}\n  Δlongitude = {$dLng}\n  a = {$a}\n  c = {$c}";
-          ?></pre>
-           <div class="verify-link">
-            <b>Verify On NOAA Great Circle Calculator:</b>
-            <a href="https://www.nhc.noaa.gov/gccalc.shtml">Latitude/Longitude Distance Calculator</a>
-            </div>
-             <div class="source-link">
-            <b>Review Zipcode Data Soure:</b>
-            <a href="https://github.com/millbj92/US-Zip-Codes-JSON/blob/master/USCities.json">US-Zip-Codes-JSON</a>
-            </div>
+  <section id="debug-section" class="debug-section<?= $debug ? '' : ' hidden' ?>">
+    <h2>Debug Information</h2>
+    <div class="debug-details">
+      <div><b>ZIPCODE 1:</b> <?= htmlspecialchars(var_export($zipRecord1, true)) ?></div>
+      <div><b>ZIPCODE 2:</b> <?= htmlspecialchars(var_export($zipRecord2, true)) ?></div>
+      <div><b>Intermediate Values:</b>
+        <pre><?php
+          $dLat = $distance[1];
+          $dLng = $distance[2];
+          $a = $distance[3];
+          $c = $distance[4];
+          echo "  Δlatitude = {$dLat}\n  Δlongitude = {$dLng}\n  a = {$a}\n  c = {$c}";
+        ?></pre>
+        <div class="verify-link">
+          <b>Verify On NOAA Great Circle Calculator:</b>
+          <a href="https://www.nhc.noaa.gov/gccalc.shtml">Latitude/Longitude Distance Calculator</a>
         </div>
+        <div class="source-link">
+          <b>Review Zipcode Data Soure:</b>
+          <a href="https://github.com/millbj92/US-Zip-Codes-JSON/blob/master/USCities.json">US-Zip-Codes-JSON</a>
         </div>
       </div>
-    </section>
-    <?php endif; ?>
+    </div>
+  </section>
+  <?php endif; ?>
   <script src="debug.js"></script>
 </body>
 </html>

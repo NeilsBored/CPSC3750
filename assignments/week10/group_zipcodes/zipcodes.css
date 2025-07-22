@@ -1,13 +1,10 @@
 /* 
-  File: zipcodes.php
+  File: zipcodes.css
   Author: Shane John
-  Date: 2025-07-19
-  Course: CPSC 3750 – Web Application Development1
-  Purpose: Frontend page for zipcode distance assignment         
-  Notes:  - Fun fact, the magority of the time spent on this assignment
-            was spent figuring out a workable way to geo-code.
-          - I used JSON data for this assignment, the instructions say to "find a free data file" 
-            without specificing a type...hope that's okay.
+  Date: 2025-07-20
+  Course: CPSC 3750 – Web Application Development
+  Purpose: Style settings for zipcode distance assignment         
+  Notes: Looked to real map applications for inspiration on the color scheme.
 */
 
 body
@@ -64,7 +61,7 @@ body
 
 .row
 {
-    margin: 1% 20% 1% 20%;
+    margin: 1% 20% 2% 20%;
     background-color: white;
     display: flex;
     justify-self: center;
