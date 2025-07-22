@@ -7,6 +7,8 @@
 <b>Technologies</b>
 
   PHP for server-side includes and templating
+  
+  JavaScript for client-side functions and animations
 
   HTML for page structure
 
