@@ -165,6 +165,10 @@ nav .content .links
 #show-week10 ~ ul{
   right: calc(-100% - 106px);
 }
+/* Week 11 */
+#show-week11 ~ ul{
+  right: calc(-100% - 106px);
+}
 
 .content .links ul li
   {
@@ -252,7 +256,8 @@ nav .content .links
   .content .links #show-week7:checked ~ ul,
   .content .links #show-week8:checked ~ ul,
   .content .links #show-week9.content ~ ul,
-  .content .links #show-week10.content ~ ul{
+  .content .links #show-week10.content ~ ul,
+  .content .links #show-week11.content ~ ul{
     max-height: 100vh;
   }
   .content .links ul li{

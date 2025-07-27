@@ -89,6 +89,13 @@
                                 <li><a href="<?= $BASE_PATH ?>assignments/week10/group_zipcodes/zipcodes_viewControl.php">Group: Zipcode Distance</a></li>
                             </ul>                
                         </li>
+                        <li><a href="#" class="desktop-link">Week 11</a>
+                            <input type="checkbox" id="show-week11">
+                            <label for="show-week10">Week 11</label>
+                            <ul>
+                                <li><a href="<?= $BASE_PATH ?>assignments/week11/db_integrate/insert_form.php">CREATE DB</a></li>
+                            </ul>                
+                        </li>
                     </ul>
             </li>
             <li><a href="<?= $BASE_PATH ?>program_exams/exam_one/prime.html">Exam #1</a></li>
