@@ -1,3 +1,13 @@
+<!--
+  File: list.php
+  Author: Shane John
+  Date: 2025-07-27
+  Course: CPSC 3750 – Web Application Development
+  Purpose: Allows user to search by last name
+  Notes: Just one more form.
+-->
+
+ <!-- Search Frontend Form -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
