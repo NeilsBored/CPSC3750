@@ -12,9 +12,9 @@
 $mysqli = mysqli_connect
 (
     "151.106.97.51",
-    "u431530241_admin",
-    "Sammi526",
-    "u431530241_People"
+    "",
+    "",
+    ""
 );
 // Connect success check
 if (mysqli_connect_errno())
