@@ -1,0 +1,210 @@
+/*
+  File: collect.css
+  Author: Shane John
+  Date: 2025-07-22
+  Course: CPSC 3750 – Web Application Development
+  Purpose: Base stlyings for collect app page
+  Notes: May be broken out by each view in phase 2...it may not also.
+         In any case, the current version is mostly for the index page.
+*/
+
+/* Base styles */
+body 
+{
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* Links + Focusing */
+a 
+{
+    color: inherit;
+    text-decoration: none;
+}
+a:focus,
+button:focus 
+{
+    outline: 2px solid white;
+}
+
+/* Navigation */
+nav 
+{
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+}
+.nav 
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+.nav li 
+{
+    margin: 0;  
+}
+.nav a 
+{
+    padding: 0.5rem 1rem;
+    display: block;
+}
+.nav a:hover 
+{
+    background: #555;
+    border-radius: 15px;
+}
+.nav img
+{
+    width: 55px;
+}
+
+/* Container (Search + Table) */
+.container 
+{
+    max-width: 1000px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
+
+/* Search form */
+form#searchForm 
+{
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+form#searchForm input[type="text"] 
+{
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form#searchForm button 
+{
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form#searchForm button:hover 
+{
+    background: #0056b3;
+}
+
+/* Tables */
+table 
+{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+    margin-bottom: 1rem;
+}
+table thead th:first-child 
+{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+table thead th:last-child 
+{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+table th,
+table td 
+{
+    padding: 0.5rem;
+    text-align: center;
+}
+table th 
+{
+    color: white;
+    background: #7c7c7ce5;
+}
+
+
+/* Buttons */
+button.add-btn 
+{
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button.add-btn:hover 
+{
+    background: #218838;
+}
+button.details-btn 
+{
+    background: #e48a30;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button.details-btn:hover 
+{
+    background: #c86f16;
+}
+
+/* Details view */
+.details 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.details img 
+{
+    max-width: 200px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.67);
+}
+.details .info 
+{
+    background-color: #95959523;
+    flex: 1;
+    min-width: 200px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.67);
+}
+
+/* Stats view */
+.api-stats 
+{
+    margin: 30px 0;
+    max-width: 800px;
+}
+.api-table
+{
+    margin: 10px 0 30px 0;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.67);
+}
+#movies
+{
+    background-color: rgb(72, 255, 157);
+}
+#shows
+{
+    background-color: rgb(255, 72, 72);
+}
+#people
+{
+    background-color: rgb(72, 78, 255);
+}

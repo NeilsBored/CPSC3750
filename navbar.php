@@ -101,6 +101,7 @@
             <li><a href="<?= $BASE_PATH ?>program_exams/exam_one/prime.html">Exam #1</a></li>
             <li><a href="<?= $BASE_PATH ?>program_exams/exam_two/vowels.php">Exam #2</a></li>
             <li><a href="<?= $BASE_PATH ?>audio_demo/AudioDemo.php">Audio Demo</a></li>
+            <li><a href="<?= $BASE_PATH ?>collect_app/index.php">Movie Scout</a></li>
             <li><a href="https://github.com/NeilsBored/CPSC3750">Github Repo</a></li>
             <li><a href="mailto:shanej@clemson.edu">Email Shane</a></li>
         </ul>

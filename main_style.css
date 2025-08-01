@@ -49,7 +49,7 @@ nav .content .links
 .content .links li
   {
     list-style: none;
-    line-height: 69px;
+    line-height: 60px;
   }
 .content .links li a,
 .content .links li label
@@ -105,14 +105,14 @@ nav .content .links
   {
     position: absolute;
     background: #171c24;
-    top: 80px;
+    top: 100%;
     z-index: -1;
     opacity: 0;
     visibility: hidden;
   }
 .content .links li:hover > ul
   {
-    top: 70px;
+    top: 100%;
     opacity: 1;
     visibility: visible;
     transition: all 0.35s ease-in;
@@ -167,7 +167,7 @@ nav .content .links
 }
 /* Week 11 */
 #show-week11 ~ ul{
-  right: calc(-100% - 106px);
+  right: calc(-100% - 16px);
 }
 
 .content .links ul li
@@ -211,7 +211,7 @@ nav .content .links
     background: #14181f;
     height: 100%;
     width: 100%;
-    top: 70px;
+    top: 50px;
     left: -100%;
     margin-left: 0;
     max-width: 350px;

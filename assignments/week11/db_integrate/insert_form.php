@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="../../../main_style.css">
 </head>
 <body>
-    // Common NavBar
+    <!-- Common NavBar -->
     <div class="wrapper">
       <?php include '../../../navbar.php'; ?>
     </div >
-    // basically db_integrate assignment's central command
+    <!-- basically db_integrate assignment's central command -->
     <div style="justify-items: center; text-align: center; margin: 10px;">
         <h1>Add a Person</h1>
         <form action="insert.php" method="post" >
