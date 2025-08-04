@@ -34,7 +34,7 @@
                             <label for="show-week3">Week 3</label>
                             <ul>
                                 <li><a href="#">Javascript Events</a></li>
-                                <li><a href="#">PHP Helloworld</a></li>
+                                <li><a href="<?= $BASE_PATH ?>assignments/week3/helloWorldPHP/phpHelloWorld.php">PHP Helloworld</a></li>
                                 <li><a href="#">Group: More CSS</a></li>
                             </ul>                
                         </li>

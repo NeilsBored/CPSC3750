@@ -9,8 +9,8 @@
 -->
 
 <?php
-    // Include for page logic
-    require_once __DIR__ . '/db/UsersTable/usersTable_admin.php';
+    
+    require_once __DIR__ . '/db/usersTable/usersTable_admin.php';
 ?>
 
 <!DOCTYPE html>
