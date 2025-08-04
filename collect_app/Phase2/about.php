@@ -7,8 +7,7 @@
   Notes: "About This Collection App" section was written to be all you really need to read to use the app.
 -->
 
-<!-- Include for MovieScout list -->
-<?php require_once __DIR__ . '/db/db_config.php';?>
+<?php require_once __DIR__ . '/db/usersTable/usersTable_auth.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,29 +22,25 @@
     <div class="wrapper">
       <?php include '../../navbar.php'; ?>
     </div >
-    <!-- About Page -->
+     <!-- Collect NavBar -->
     <header>  
-    <nav label="Main Navigation">
-        <ul class="nav">
-            <img src="images/ticket.png" alt="collectIcon"><h2>MovieScout</h2>
-            <li><a href="index.php">Search Home</a></li>
-            <li><a href="stats.php">Collection Stats</a></li>
-            <li><a href="about.php">How to Scout</a></li>
-            <li><a href="../index.php">Phase 1</a></li>
-        </ul>
-    </nav>
+        <?php include 'collect_nav.php'; ?>
     </header>
     <main class="container">
         <h1>About This Collection App</h1>
             <p>
-                This application allows you to add to a public movie collection database (Your selections are saved, 
-                but reset on the search page each time it is refreshd). When you search for a title, the app fetches data from 
-                <b>TMDb's (The Movie Database) API</b>, providing details such as original title, release date, average rating, a brief synopsis, and the poster image.
+                MovieScout lets users search TMDb's (The Movie Database) API and add movies to a shared public and personal collection.
+                Each result displays the original title, release date, average rating, synopsis, and poster image.
+                Selecting <b>"add to collection"</b> stores the movie in MovieScoutDB, and your choices now persists when the Page resets.
+            </p>
+            <p>
+                Creating a profile lets you keep a personal collection, mark favorite movies, and view your profile details.
+                Admin users can also browse all user accounts and every saved collection item.
             </p>
             <br>
         <h2>API Data Source</h2>
             <p>TMDb is a community-maintained database. You can obtain your own API key, if you wish too, using the link below.</p>
-            <p>All searched movie data is retrieved live from the TMDb API (version 3).</p>
+            <p>All searched movie data is retrieved live from the <b>TMDb API (version 3)</b>.</p>
             <br>
                 <p><i><a href="https://developer.themoviedb.org/">Click Here for TMDb API Documentation</a></i></p>
             <br>
@@ -68,4 +63,4 @@
             </ul>
     </main>
 </body>
-</html>I 
+</html>

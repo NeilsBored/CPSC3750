@@ -10,7 +10,9 @@
 */
 
 // Include for db connection credential
-require_once __DIR__ . '/db_config.php';
+require_once __DIR__ . '/../db_config.php';
+require_once __DIR__ . '/../usersTable/usersTable_auth.php';
+require_login();
 
 /*
  * Parameters: none
@@ -60,7 +62,8 @@ function validateMovieData(array $data): array
  * Return:     void
  * Prepares, verifies, the executes the insert in to movies tables (or sends error and exits).
  */
-function insertMovie(mysqli $connect, array $movie): void {
+function insertMovie(mysqli $connect, array $movie): int 
+{
     // Blank Temp Add Statement
     $sqlAdd = $connect->prepare
     (
@@ -83,7 +86,7 @@ function insertMovie(mysqli $connect, array $movie): void {
         $movie['overview'],
         $movie['poster']
     );
-    // Add values to table
+    // Add values to table + verify
     if (! $sqlAdd->execute()) 
     {
         http_response_code(500);
@@ -92,13 +95,32 @@ function insertMovie(mysqli $connect, array $movie): void {
         exit;
     }
     // Close connection
+    $id = $connect->insert_id;
     $sqlAdd->close();
+    return $id;
 }
 
 // Main flow
 $payload = getJsonPayload();
 $movie   = validateMovieData($payload);
-insertMovie($connection, $movie);
+$movieId = insertMovie($connection, $movie);
+$collection = $connection->prepare('INSERT INTO collection (user_id, movie_id) VALUES (?, ?)');
+if ($collection) {
+    $collection->bind_param('ii', $_SESSION['user_id'], $movieId);
+    if (! $collection->execute()) {
+        http_response_code(500);
+        echo json_encode(['error' => 'Insert collection failed: ' . $collection->error]);
+        $collection->close();
+        $connection->close();
+        exit;
+    }
+    $collection->close();
+} else {
+    http_response_code(500);
+    echo json_encode(['error' => 'Prepare collection failed: ' . $connection->error]);
+    $connection->close();
+    exit;
+}
 // Close/ Success message
 echo json_encode(['status' => 'success']);
 $connection->close();

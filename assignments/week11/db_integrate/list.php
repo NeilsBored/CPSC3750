@@ -9,7 +9,7 @@
 */
 
 // Start session
-include 'db_connect.php';
+include '../../../../db_connect.php';
 // Create query
 $sql = "SELECT first_name, last_name, email 
         FROM person

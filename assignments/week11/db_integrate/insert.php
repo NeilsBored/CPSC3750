@@ -9,7 +9,7 @@
 */
 
 // Create session
-include 'db_connect.php';
+include '../../../../db_connect.php';
 // Sanitize before the query
 $first = mysqli_real_escape_string($mysqli, $_POST['first_name']);
 $last = mysqli_real_escape_string($mysqli, $_POST['last_name']);

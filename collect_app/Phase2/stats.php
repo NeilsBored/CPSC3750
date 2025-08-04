@@ -10,7 +10,10 @@
 -->
 
 <!-- Include for backend php -->
-<?php require_once __DIR__ . '/php/stats_logic.php'; ?>
+<?php 
+    require_once __DIR__ . '/php/stats_logic.php';
+    require_once __DIR__ . '/db/usersTable/usersTable_auth.php'; 
+ ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,18 +28,12 @@
   <div class="wrapper">
     <?php include '../../navbar.php'; ?>
   </div >
-  <!-- Stats Page -->
-  <header>  
-    <nav label="Main Navigation">
-        <ul class="nav">
-            <img src="images/ticket.png" alt="collectIcon"><h2>MovieScout</h2>
-            <li><a href="index.php">Search Home</a></li>
-            <li><a href="stats.php">Collection Stats</a></li>
-            <li><a href="about.php">How to Scout</a></li>
-            <li><a href="../index.php">Phase 1</a></li>
-        </ul>
-    </nav>
-   </header>
+
+  <!-- Collect NavBar -->
+    <header>  
+        <?php include 'collect_nav.php'; ?>
+    </header>
+
     <main class="container">
         <!-- Statistics from Movies table -->
         <div class="db-stats">

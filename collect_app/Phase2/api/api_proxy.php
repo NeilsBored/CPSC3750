@@ -56,7 +56,7 @@ function fetchFromTMDb(string $endpoint): array
 function parseRequestParams(): array 
 {
     $title = isset($_GET['title']) ? trim($_GET['title']) : '';
-    $maxResults = isset($_GET['max']) ? (int) $_GET['max'] : 20;
+    $maxResults = isset($_GET['max']) ? (int) $_GET['max'] : 100;
     return [$title, $maxResults];
 }
 

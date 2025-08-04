@@ -9,14 +9,14 @@
 */
 
 // Include for db connection credential
-require_once __DIR__ . '/db_config.php';
+require_once __DIR__ . '/../db_config.php';
 
 // Prepare statement
 $sql = 'SELECT id, title, release_date, rating, overview, poster, added_at
         FROM movies
         ORDER BY added_at DESC';
 // Grab Result of that statement
-$result = $conn->query($sql);
+$result = $connnection->query($sql);
 // Loop to fill data array
 $movies = [];
 if ($result) 
@@ -32,4 +32,4 @@ if ($result)
 header('Content-Type: application/json');
 echo json_encode($movies);
 // End Transmission
-$connect->close();
+$connection->close();

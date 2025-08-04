@@ -16,9 +16,29 @@ document.addEventListener('DOMContentLoaded', () =>
     const searchForm = document.getElementById('searchForm');
     const searchInput = document.getElementById('searchInput');
     const resultsBody = document.getElementById('resultsBody');
+    const detailsModal = document.getElementById('detailsModal');
+    const detailsFrame = document.getElementById('detailsFrame');
+    const modalClose = document.getElementById('modalClose');
 
     // Initialize with empty query
-    fetchMovies('');
+   let collectionTitles = new Set();
+
+    function loadCollectionTitles()
+    {
+        return fetch('db/collectionTable/collectionTable_titles.php')
+            .then(response => response.json())
+            .then(titles => { collectionTitles = new Set(titles); })
+            .catch(error => console.error('Collection fetch error:', error));
+    }
+
+    if (window.isLoggedIn)
+    {
+        loadCollectionTitles().then(() => fetchMovies(''));
+    }
+    else
+    {
+        fetchMovies('');
+    }
 
     // Simple search on button push
     searchForm.addEventListener('submit', event => 
@@ -48,6 +68,28 @@ document.addEventListener('DOMContentLoaded', () =>
     {
         fetchMovies(searchInput.value.trim());
     }, 300));
+
+
+
+    function showDetails(url)
+    {
+        detailsFrame.src = url;
+        detailsModal.classList.add('show');
+    }
+
+    function closeDetails()
+    {
+        detailsModal.classList.remove('show');
+        detailsFrame.src = '';
+    }
+
+    modalClose.addEventListener('click', closeDetails);
+    detailsModal.addEventListener('click', event =>
+    {
+        if (event.target === detailsModal) closeDetails();
+    });
+
+
 
     /*
      * Parameters: query(string) - The search term to be fetched.
@@ -100,21 +142,40 @@ document.addEventListener('DOMContentLoaded', () =>
     function addRow(movie) 
     {
         const tr = document.createElement('tr');
+        const detailsUrl = `details.php?title=${encodeURIComponent(movie.title || '')}`;
+        tr.addEventListener('click', event =>
+        {
+            if (event.target.closest('button')) return;
+            showDetails(detailsUrl);
+        });
         const cells = 
         [
             createImageCell(movie.poster_url || 'Image Not Found'), 
             createCell(movie.title || 'Untitled'),
             createCell(movie.release_date || 'Unknown'),
             createCell(movie.rating ? parseFloat(movie.rating).toFixed(1) : 'N/A'),
-            createButtonCell('View Details', 'details-btn', () => 
+            createButtonCell('View Details', 'details-btn', () =>
             {
-                window.location.href = `details.php?title=${encodeURIComponent(movie.title || '')}`;
-            }),
-            createButtonCell('Add to Collection', 'add-btn', btn => 
-            {
-                addToCollection(movie, btn);
+                showDetails(detailsUrl);
             })
         ];
+         if (window.isLoggedIn) {
+            const tdAdd = createButtonCell('Add to Collection', 'add-btn', btn =>
+            {
+                addToCollection(movie, btn);
+        });
+            const btn = tdAdd.querySelector('button');
+            if (collectionTitles.has(movie.title)) 
+            {
+                btn.disabled = true;
+                btn.textContent = 'In Collection';
+                btn.style.backgroundColor = 'black';
+                btn.style.color ='white';
+            }
+            cells.push(tdAdd);
+        } else {
+            cells.push(createCell(''));
+        }
         cells.forEach(cell => tr.appendChild(cell));
         resultsBody.appendChild(tr);
     }
@@ -162,9 +223,15 @@ document.addEventListener('DOMContentLoaded', () =>
     {
         const td = document.createElement('td');
         const btn = document.createElement('button');
+        btn.type = 'button';
         btn.className = className;
         btn.textContent = label;
-        btn.addEventListener('click', () => onClick(btn));
+        btn.addEventListener('click', event =>
+        {
+            event.preventDefault();
+            event.stopPropagation();
+            onClick(btn);
+        });
         td.appendChild(btn);
         return td;
     }
@@ -186,8 +253,8 @@ document.addEventListener('DOMContentLoaded', () =>
             overview: movie.overview || '',
             poster: movie.poster_url || ''
         };
-        // Post to movies table
-        fetch('db/moviesTable_add.php',
+        // Post to movies table and user collection
+        fetch('db/moviesTable/moviesTable_add.php',
         {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
@@ -202,8 +269,10 @@ document.addEventListener('DOMContentLoaded', () =>
                 button.disabled = true;
                 button.textContent = 'In Collection';
                 button.style.backgroundColor = 'black';
-            } 
-            else 
+                button.style.color = 'white';
+                collectionTitles.add(movie.title);
+            }
+            else
             {
                 alert('Failed to add movie: ' + (result.error || 'Unknown error'));
             }

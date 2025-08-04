@@ -19,22 +19,6 @@
   <link rel="stylesheet" href="css/collect.css">
 </head>
 <body>
-  <!-- Common NavBar -->
-  <div class="wrapper">
-    <?php include '../../navbar.php'; ?>
-  </div >
-  <!-- Details Page -->
-  <header>  
-    <nav label="Main Navigation">
-        <ul class="nav">
-            <img src="images/ticket.png" alt="collectIcon"><h2>MovieScout</h2>
-            <li><a href="index.php">Search Home</a></li>
-            <li><a href="stats.php">Collection Stats</a></li>
-            <li><a href="about.php">How to Scout</a></li>
-            <li><a href="../index.php">Phase 1</a></li>
-        </ul>
-    </nav>
-   </header>
   <main class="container">
     <?php if ($movieData): ?>
       <h1><?= htmlspecialchars($movieData['title']) ?></h1>

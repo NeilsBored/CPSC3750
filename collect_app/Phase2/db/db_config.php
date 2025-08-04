@@ -2,7 +2,7 @@
 /*
   File: db_config.php
   Author: Shane John
-  Date: 2025-07-22
+  Date: 2025-07-30
   Course: CPSC 3750 – Web Application Development
   Purpose: Sets credentials for MovieScoutDB
   Notes: Hidden on everything that is not my files.
