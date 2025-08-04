@@ -20,6 +20,7 @@
     <title>Favorite Movies</title>
     <link rel="stylesheet" href="../../main_style.css">
     <link rel="stylesheet" href="css/collect.css">
+    <link rel="stylesheet" href="css/collect2.css">
     <link rel="stylesheet" href="css/users.css">
 </head>
 <body>

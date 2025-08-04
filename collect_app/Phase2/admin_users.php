@@ -20,6 +20,7 @@
     <title>Admin Users List</title>
     <link rel="stylesheet" href="../../main_style.css">
     <link rel="stylesheet" href="css/collect.css">
+    <link rel="stylesheet" href="css/collect2.css">
 </head>
 <body>
     <!-- Common NavBar -->

@@ -27,6 +27,7 @@ if (!isset($_GET['r']))
     <title>Movie Scout Search</title>
     <link rel="stylesheet" href="../../main_style.css">
     <link rel="stylesheet" href="css/collect.css">
+    <link rel="stylesheet" href="css/collect2.css">
 </head>
 <body>
     <!-- Common NavBar -->
