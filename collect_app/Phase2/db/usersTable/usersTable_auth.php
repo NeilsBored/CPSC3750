@@ -73,7 +73,7 @@ function login_user(array $user): void
     $_SESSION['is_admin'] = (int)$user['is_admin'] === 1;
 }
 
-/*
+/* 
  * Parameters: none
  * Return:     void
  * Logs out the user by clearing session variables and destroying the session.

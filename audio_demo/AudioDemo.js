@@ -15,8 +15,8 @@ var fileName = document.getElementById('fileName'),
       rewindButton = document.getElementById('rewindButton'),
       forwardButton = document.getElementById('fastForwardButton'),
       playlist = document.getElementById('playlist'),
-      addTitleButton = document.getElementById('addTitle'),
-      removeTitleButton = document.getElementById('removeTitle');
+      addSegmentButton = document.getElementById('addSegment'),
+      removeSegmentButton = document.getElementById('removeSegment');
 
 // Interval timer for updating playback position
 let timer = null;
@@ -94,6 +94,11 @@ function playSegment(i)
     // Reset update timer
     clearInterval(timer);
     timer = setInterval (updateTime, 250);
+
+    // Highlight the active playlist button
+    document.querySelectorAll('#playlist button').forEach((btn, idx) => {
+      btn.classList.toggle('active', idx === i);
+    });
 }
 
 // Load the playlist into the page
@@ -115,13 +120,13 @@ function loadPlaylist()
     });
 }
 // Adds a new segment and title
-addTitleButton.onclick = () =>
+addSegmentButton.onclick = () =>
 {   
-    // Prompt user for segment title
-    let newTitle = prompt('Enter A Title For Your Segment:')
-        if(!newTitle) return;
     // Capture segment start time
     let t = Number(audio.currentTime.toFixed(0));
+    // Prompt user for segment title
+    let newTitle = prompt(`Enter a title for your segment (start time: ${t}s):`);
+        if(!newTitle) return;
     let duration = parseFloat(prompt('How long in seconds is your segment?'));
         if (!duration) return;
     // Cut segment end to audio duration
@@ -130,9 +135,10 @@ addTitleButton.onclick = () =>
     segments.push({ title: newTitle, start: t, end: duration });
         segments.sort((a,b) => a.start-b.start);
         loadPlaylist();
+        alert('Segment added successfully.');
 };
 // Removes the current segment
-removeTitleButton.onclick = () =>
+removeSegmentButton.onclick = () =>
 {
     if(!currentSegment) return alert('Please Select A Segment To Remove')
     // Update segments by filtering out the current segment

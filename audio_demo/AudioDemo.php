@@ -6,6 +6,7 @@
   Purpose: Application Driver for AudioDemo, features loaded audio title, playback and playlist title control, and the 
   Notes: There "may"...Okay, there totally is random stylings in a few places. Sorry, If I had more time I promise they wouldn't be there.
 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,9 +16,15 @@
 </head>
 <body>
     <!-- Common NavBar -->
-    <div class="wrapper" style="border-radius: 20px;">
+    <div class="wrapper">
         <?php include '../navbar.php'; ?>
     </div>
+    
+    <nav class="user-test">
+     <a href="Shane John - User_test_notes_raw.pdf">Test Notes(Raw)</a>
+     <a href="Shane John - User_test_notes_typed.pdf">Test Notes(Typed)</a>
+     <a href="Shane John - before.png">Before Changes</a>
+    </nav> 
 
     <header>
         <h2>Project 1: Audio Changer</h2>
@@ -73,8 +80,8 @@
                     </div>
                     <!-- Title Playlist Controls-->
                     <div style="display: flex;">
-                        <button id="addTitle">Add Title</button>
-                        <button id="removeTitle">Remove Title</button>
+                        <button id="addSegment">Add Segments</button>
+                        <button id="removeSegment">Remove Segments</button>
                     </div>
                 </div>
             </div>

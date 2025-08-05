@@ -55,10 +55,10 @@ button {
     background-color: rgb(150, 119, 96);
 }
 /* Title Control Buttons */
-#addTitle {
+#addSegment {
     background-color: green;
 }
-#removeTitle {
+#removeSegment {
     background-color: red;
 }
 #playPauseButton:hover, #addTitle:hover, #removeTitle:hover {
@@ -75,14 +75,16 @@ button {
     padding: 0;
     margin: 20px auto;
     width: fit-content;
+    min-width: 200px;
+    
 }
 #playlist li {
     padding: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 2px;
+    padding-right: 2px;
     margin: 5px 0;
     background-color: #222;
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer;
     text-align: center;
 }
@@ -130,4 +132,25 @@ button {
     {
       margin-bottom: 15px;
       text-align: center;
+    }
+
+    /* Active segment button styling */
+    #playlist button.active {
+    background-color: cornflowerblue;
+    color: white;
+    border: 2px solid #fff;
+    }
+
+
+
+
+    
+
+    .user-test 
+    {
+        margin: 5px;
+    }
+    .user-test a
+    {
+        padding: 5px;
     }
